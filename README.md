@@ -7,6 +7,7 @@ Este é um projeto de um ecommerce de capinhas personalizada para celulares, *ma
 - [NextJs](https://nextjs.org/)
 - [Typescript](https://www.typescriptlang.org/)
 - [PostgreSql](https://www.postgresql.org/)
+- [Kinde](https://kinde.com)
 
 ## Libs
 
