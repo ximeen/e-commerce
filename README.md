@@ -17,3 +17,9 @@ Este é um projeto de um ecommerce de capinhas personalizada para celulares, *ma
 - [ShadcnUi](https://ui.shadcn.com/)
 
 
+## Demonstração
+Algumas imagens de demonstração da aplicação finalizada em seu modelo original.
+
+![alt text](/images/demoProject-1.png)
+
+![alt text](/images/demoProject-2.png)
