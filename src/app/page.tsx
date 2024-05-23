@@ -1,9 +1,11 @@
 import { MaxWidthWrapper } from "@/components/MaxWidthWrapper";
 import Image from "next/image";
-import {Check, Star} from "lucide-react"
+import {ArrowRight, Check, Star} from "lucide-react"
 import { Phone } from "@/components/Phone";
 import { Icons } from "@/components/Icons";
 import { Reviews } from "@/components/Reviews";
+import Link from "next/link";
+import { buttonVariants } from "@/components/ui/button";
 
 export default function Home() {
   return (
@@ -15,9 +17,9 @@ export default function Home() {
               <div className="absolute w-28 left-0 -top-20 hidden lg:block">
                 <Image src="/snake-1.png" alt="snake image" className="w-full" width={200} height={200}/>
               </div>
-              <h1 className="relative w-fit tracking-tight text-balance mt-16 font-bold !leading-tight text-gray-900 text-5xl md:text-6xl lg:text-7xl">Sua imagem em uma capinha <span className="bg-violet-400 text-white"> personalizada </span></h1>
+              <h1 className="relative w-fit tracking-tight text-balance mt-16 font-bold !leading-tight text-gray-900 text-5xl md:text-6xl lg:text-7xl">Sua imagem em uma case <span className="bg-violet-600 text-white"> personalizada </span></h1>
               <p className="mt-8 text-lg lg:pr-10 max-w-prose text-center lg:text-left text-balance md:text-wrap">
-                Capture suas memórias favoritas com o <span className="font-semibold">seu proprio</span> celular.
+                Leve suas memórias favoritas no <span className="font-semibold">seu proprio</span> celular.
               </p>
               <ul className="mt-8 space-y-2 text-left font-medium flex flex-col items-center sm:items-start">
                 <div className="space-y-2">
@@ -45,10 +47,10 @@ export default function Home() {
                 </div>
                 <div className="flex flex-col justify-between items-center sm:items-start">
                   <div className="flex gap-0.5"> 
-                    <Star className="h-4 w-4 text-violet-400 fill-violet-400"/>
-                    <Star className="h-4 w-4 text-violet-400 fill-violet-400"/>
-                    <Star className="h-4 w-4 text-violet-400 fill-violet-400"/>
-                    <Star className="h-4 w-4 text-violet-400 fill-violet-400"/>
+                    <Star className="h-4 w-4 text-yellow-400 fill-yellow-400"/>
+                    <Star className="h-4 w-4 text-yellow-400 fill-yellow-400"/>
+                    <Star className="h-4 w-4 text-yellow-400 fill-yellow-400"/>
+                    <Star className="h-4 w-4 text-yellow-400 fill-yellow-400"/>
                   </div>
                 <p><span className="font-semibold">1.500</span> Usuarios contentes</p>
                 </div>
@@ -74,11 +76,11 @@ export default function Home() {
           <div className="mx-auto grid max-w-2xl grid-cols-1 px-4 lg:mx-0 lg:max-w-none lg:grid-cols-2 gap-y-16">
             <div className="flex flex-auto flex-col gap-4 lg:pr-8 xl:pr-20">
               <div className="flex gap-0.5 mb-2 ">
-                <Star className="h-5 w-5 text-violet-600 fill-violet-600"/>
-                <Star className="h-5 w-5 text-violet-600 fill-violet-600"/>
-                <Star className="h-5 w-5 text-violet-600 fill-violet-600"/>
-                <Star className="h-5 w-5 text-violet-600 fill-violet-600"/>
-                <Star className="h-5 w-5 text-violet-600 fill-violet-600"/>
+                <Star className="h-5 w-5 text-yellow-400 fill-yellow-400"/>
+                <Star className="h-5 w-5 text-yellow-400 fill-yellow-400"/>
+                <Star className="h-5 w-5 text-yellow-400 fill-yellow-400"/>
+                <Star className="h-5 w-5 text-yellow-400 fill-yellow-400"/>
+                <Star className="h-5 w-5 text-yellow-400 fill-yellow-400"/>
               </div>
               <div className="text-lg leading-8">
                 <p>&quot;A capinha é bem durável e recebi elogios pelo design. Tenho a capinha a uns 2 meses e a<span className="bg-slate-800 text-white"> imagem esta bem limpa</span> outras com 1 mês já fica com uma imagem apagada ou amarelada, amei esta capinha ❤️ &quot;</p>
@@ -102,11 +104,11 @@ export default function Home() {
 
             <div className="flex flex-auto flex-col gap-4 lg:pr-8 xl:pr-20">
               <div className="flex gap-0.5 mb-2 ">
-                <Star className="h-5 w-5 text-violet-600 fill-violet-600"/>
-                <Star className="h-5 w-5 text-violet-600 fill-violet-600"/>
-                <Star className="h-5 w-5 text-violet-600 fill-violet-600"/>
-                <Star className="h-5 w-5 text-violet-600 fill-violet-600"/>
-                <Star className="h-5 w-5 text-violet-600 fill-violet-600"/>
+                <Star className="h-5 w-5 text-yellow-400 fill-yellow-400"/>
+                <Star className="h-5 w-5 text-yellow-400 fill-yellow-400"/>
+                <Star className="h-5 w-5 text-yellow-400 fill-yellow-400"/>
+                <Star className="h-5 w-5 text-yellow-400 fill-yellow-400"/>
+                <Star className="h-5 w-5 text-yellow-400 fill-yellow-400"/>
               </div>
               <div className="text-lg leading-8">
                 <p>&quot;Estou apaixonada por essa capinha! <span className="bg-slate-800 text-white">A qualidade do material é visível e a durabilidade é ótima</span>. Já recomendei para várias amigas. Com certeza a melhor capinha personalizada que já comprei! &quot;</p>
@@ -132,6 +134,63 @@ export default function Home() {
         <div className="pt-16">
           <Reviews />
         </div>
+      </section>
+      
+      <section>
+      <MaxWidthWrapper className="py-24">
+        <div className="mb-12 px-6 lg:px-8">
+          <div className="mx-auto max-w-2xl sm:text-center">
+          <h2 className="order-1 mt-2 tracking-tighter text-center text-balance !leading-tight font-bold text-5xl md:text-6xl text-gray-900 ">Faça o upload da sua foto e pegue sua <span className="relative px-2 bg-violet-600 text-white">case</span> agora!!</h2>
+          </div>
+        </div>
+
+        <div className="mx-auto max-w-6xl px-6 lg:px-8">
+          <div className="relative flex flex-col items-center md:grid grid-cols-2 gap-40">
+            <Image 
+            className="absolute top-[25rem] md:top-1/2 -translate-y-1/2 z-10 left-1/2 -translate-x-1/2 rotate-90 md:rotate-0"
+            src={"/arrow.png"}
+            alt=""
+            width={150}
+            height={150}
+            />
+            <div className="relative h-80 md:h-full w-full md:justify-self-end max-w-sm rounded-xl bg-gray-900/5 ring-inset ring-gray-900/10">
+              <Image 
+                className="rounded-md object-cover bg-white shadow-2xl ring-1 ring-gray-900/10 h-full w-full "
+                src={"/horse.jpg"}
+                alt=""
+                width={400}
+                height={400}
+              />
+            </div>
+
+            <Phone className="w-60" imgSrc="/horse_phone.jpg"/>
+          </div>
+        </div>
+
+        <ul className="mx-auto mt-12 max-w-prose sm:text-lg space-y-2 w-fit">
+          <li className="w-fit">
+            <Check className="h-5 w-5 text-green-600 inline mr-1.5"/>
+            Silicone de alta qualidade
+          </li>
+          <li className="w-fit">
+            <Check className="h-5 w-5 text-green-600 inline mr-1.5"/>
+            Revestimento resistente a arranhões e impressões digitais
+          </li>
+          <li className="w-fit">
+            <Check className="h-5 w-5 text-green-600 inline mr-1.5"/>
+            Compatível com carregamento por indução
+          </li>
+          <li className="w-fit">
+            <Check className="h-5 w-5 text-green-600 inline mr-1.5"/>
+            1 ano de garantia da impressão
+          </li>
+          <div className="flex justify-center">
+            <Link className={buttonVariants({size: "lg", className: "mx-auto mt-8"})} href="/configure/upload" >
+              Crie sua case agora <ArrowRight className="h-4 w-4 ml-1.5"/>
+            </Link>
+          </div>
+        </ul>
+      </MaxWidthWrapper>
       </section>
     </div>
   )

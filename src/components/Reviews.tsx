@@ -1,6 +1,6 @@
 "use client"
 import Image from 'next/image';
-import { HTMLAttributes, HtmlHTMLAttributes, useEffect, useRef, useState } from 'react';
+import { HTMLAttributes, useEffect, useRef, useState } from 'react';
 import { MaxWidthWrapper } from '@/components/MaxWidthWrapper';
 import {useInView} from "framer-motion"
 import { cn } from '@/lib/utils';
@@ -112,7 +112,6 @@ function ReviewGrid(){
   const column1 = columns[0]
   const column2 = columns[1]
   const column3 = splitArray(columns[2], 2)
-
 
   return(
     <div
